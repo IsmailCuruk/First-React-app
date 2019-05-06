@@ -1,26 +1,32 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Title from './components/Title'
+import LightSwitch from './components/LightSwitch'
+import { Component } from 'react'
+import User from './components/User'
+import UserBoard from './components/UserBoard'
+import Clock from './components/Clock'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello world!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn to use this sparking new library
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header>
+          <p>
+            Hello world!
+          </p>
+        </header>
+
+        <main>
+          <Title content="WELCOME" />
+          <UserBoard />
+          <Clock />
+          <LightSwitch />
+        </main>
+      </div>
+    );
+  }
 }
 
 export default App;

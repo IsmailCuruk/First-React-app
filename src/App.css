@@ -1,3 +1,15 @@
+#hours {
+  color: blue
+}
+
+#minutes {
+  color: yellow
+}
+
+#seconds {
+  color: red
+}
+
 .App {
   text-align: center;
 }
@@ -16,7 +28,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(214, 133, 133);
 }
 
 .App-link {
